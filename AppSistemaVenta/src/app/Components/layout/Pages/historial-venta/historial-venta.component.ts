@@ -84,11 +84,11 @@ export class HistorialVentaComponent implements OnInit, AfterViewInit{
     let _fechaFin: string="";
 
     if(this.formularioBusqueda.value.buscarPor === "fecha"){
-      _fechaInicio = moment(this.formularioBusqueda.value.fechaInicio).format('DD/MM/YYYY')
-      _fechaFin = moment(this.formularioBusqueda.value.fechaFin).format('DD/MM/YYYY')
+      _fechaInicio = moment(this.formularioBusqueda.value.fechaInicio).format('DD/MM/YYYY');
+      _fechaFin = moment(this.formularioBusqueda.value.fechaFin).format('DD/MM/YYYY');
 
       if(_fechaInicio === "Invalid date" || _fechaFin === "Invalid date"){
-        this._utilidadServicio.mostrarAlerta("Debe ingresar ambas fechas","Oops")
+        this._utilidadServicio.mostrarAlerta("Debe ingresar ambas fechas","Oops!")
         return;
       }
     }

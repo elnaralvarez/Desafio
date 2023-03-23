@@ -7,13 +7,23 @@
 .boton-buscar{
   width: 150px;
   margin-top: 15px;
+
 }
 
 mat-form-field{
   margin-right: 10px;
 }
 
+table{
+  width: 100%;
+}
+
 .input-filter{
   width: 100%;
   font-size: 14px;
+}
+
+.mat-cell {
+  padding-left: 20px;
+  padding-top: 20px;
 }
